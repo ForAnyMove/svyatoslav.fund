@@ -32,9 +32,9 @@
 					україни час , для допомоги людям , які її потребують.
 				</p>
 				<div class="header_buttons">
-                    <a href="./index.html">
-                        <button class="header_button">Home</button>
-                    </a>
+					<a href="./index.html">
+						<button class="header_button">Home</button>
+					</a>
 					<button class="header_button">Donate</button>
 					<!-- <a href="#" class="login">Already has an account</a> -->
 				</div>
@@ -43,11 +43,11 @@
 		<main class="section">
 			<div class="section_card_wrap">
 				<div class="section_card">
-                    <div class="gallery">
-                        <img class="section_card_img" src="img/about-1.jpg" alt="experts" />
-                        <img class="section_card_img" src="img/about-2.jpg" alt="experts" />
-                        <img class="section_card_img" src="img/about-3.jpg" alt="experts" />
-                    </div>
+					<div class="gallery">
+						<img class="section_card_img" src="img/about-1.jpg" alt="experts" />
+						<img class="section_card_img" src="img/about-2.jpg" alt="experts" />
+						<img class="section_card_img" src="img/about-3.jpg" alt="experts" />
+					</div>
 					<div class="section_card_right_container">
 						<p class="section_card_heading">Про нас</p>
 						Любі друзі! На сьогоднішній день благодійність – це, мабуть, єдина
@@ -66,15 +66,6 @@
 					</div>
 				</div>
 			</div>
-            <form method="POST" action="https://www.liqpay.ua/api/3/checkout" 
-accept-charset="utf-8">
-<input type="hidden" name="data" value="eyAidmVyc2lvbiIgOiAzLCAicHVibGljX2tleSIgOiAieW91cl9wdWJsaWNfa2V5IiwgImFjdGlv
-biIgOiAicGF5IiwgImFtb3VudCIgOiAxLCAiY3VycmVuY3kiIDogIlVTRCIsICJkZXNjcmlwdGlv
-biIgOiAiZGVzY3JpcHRpb24gdGV4dCIsICJvcmRlcl9pZCIgOiAib3JkZXJfaWRfMSIgfQ=="/>
-<input type="hidden" name="signature" value="QvJD5u9Fg55PCx/Hdz6lzWtYwcI="/>
-<input type="image" 
-src="//static.liqpay.ua/buttons/p1ru.radius.png"/>
-</form>
 			<div class="section_banner">
 				<div class="section_banner_text_wrap">
 					<p class="section_banner_heading">Готовi допомогти нам?</p>
@@ -82,7 +73,9 @@ src="//static.liqpay.ua/buttons/p1ru.radius.png"/>
 						Навіть найскромніший ваш внесок дуже важливий.
 					</p>
 				</div>
-				<button class="section_banner_button">Donate</button>
+				<form method="get" action="https://www.liqpay.ua/api/3/checkout">
+					<button class="section_banner_button">Donate</button>
+				</form>
 			</div>
 		</main>
 		<footer class="footer">

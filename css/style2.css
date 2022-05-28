@@ -179,3 +179,8 @@ body, .section {
     color: #fff; }
   .footer-wrap .footer_text {
     width: 200px; }
+
+@media screen {
+  * {
+    margin: 0;
+    padding: 0; } }
