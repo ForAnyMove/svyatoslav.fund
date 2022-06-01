@@ -1,6 +1,75 @@
-@media screen {
-    *{
-        margin: 0;
-        padding: 0;
+@media (min-width: 769px) {
+	.header {
+		padding-left: 140px;
+
+		.header-wrap {
+			width: 400px;
+		}
+		.header_heading {
+			width: 550px;
+		}
+	}
+	.section_card {
+		width: 600px;
+
+		.section_card_img {
+			width: 240px;
+		}
+
+		.section_card_right_container {
+			width: 300px;
+		}
+	}
+
+	.section_banner {
+		width: 700px;
+	}
+    
+    .footer_wrap{
+        padding: 60px 140px 20px;
     }
+
+	.footer_text {
+		width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		width: 100vw;
+	}
+	.header {
+		margin: 0;
+		padding: 4vw;
+
+		.header-wrap {
+			width: 80vw;
+		}
+		.header_heading {
+			font-size: 2vw;
+			width: 70vw;
+		}
+	}
+    .section_card {
+		width: 90vw;
+        flex-direction: column-reverse;
+
+		.section_card_img {
+			width: 85vw;
+		}
+
+		.section_card_right_container {
+			width: 85vw;
+            text-align: center;
+            padding-left: 2vw;
+		}
+	}
+
+	.section_banner {
+		width: 100vw;
+	}
+
+	.footer_text {
+		width: 70vw;
+	}
 }

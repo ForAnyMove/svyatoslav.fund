@@ -11,8 +11,7 @@ body, .section {
   display: flex;
   align-items: center; }
   .landing-logo img {
-    width: 30px;
-    height: 30px; }
+    height: 60px; }
   .landing-logo p {
     font-size: 20px;
     margin-left: 10px;
@@ -99,7 +98,7 @@ body, .section {
     display: flex;
     justify-content: space-between;
     background: #21232e;
-    width: 600px;
+    width: 800px;
     border-radius: 5px;
     margin: 20px auto; }
     .section .section_card .section_card_img {
@@ -110,8 +109,8 @@ body, .section {
       flex-direction: column;
       align-items: center;
       color: #c6d0cb;
-      width: 600px;
-      margin: 30px 50px 30px 0; }
+      width: 800px;
+      margin: 30px 70px 30px 0; }
       .section .section_card .section_card_right_container .section_card_heading {
         font-size: 15px;
         margin-bottom: 20px;
@@ -176,11 +175,61 @@ body, .section {
   font-size: 8px;
   padding: 60px 140px 20px; }
   .footer-wrap .footer_logo p {
-    color: #fff; }
+    color: #fff;
+    line-height: 1.7; }
   .footer-wrap .footer_text {
-    width: 200px; }
+    width: 200px;
+    display: flex;
+    flex-direction: column; }
 
-@media screen {
-  * {
+@media (min-width: 769px) {
+  .header {
+    padding-left: 140px; }
+    .header .header-wrap {
+      width: 400px; }
+    .header .header_heading {
+      width: 550px; }
+
+  .section_card {
+    width: 600px; }
+    .section_card .section_card_img {
+      width: 240px; }
+    .section_card .section_card_right_container {
+      width: 300px; }
+
+  .section_banner {
+    width: 700px; }
+
+  .footer_wrap {
+    padding: 60px 140px 20px; }
+
+  .footer_text {
+    width: 200px; } }
+@media (max-width: 768px) {
+  body, .section {
+    width: 100vw; }
+
+  .header {
     margin: 0;
-    padding: 0; } }
+    padding: 4vw; }
+    .header .header-wrap {
+      width: 80vw; }
+    .header .header_heading {
+      font-size: 2vw;
+      width: 70vw; }
+
+  .section_card {
+    width: 90vw;
+    flex-direction: column-reverse; }
+    .section_card .section_card_img {
+      width: 85vw; }
+    .section_card .section_card_right_container {
+      width: 85vw;
+      text-align: center;
+      padding-left: 2vw; }
+
+  .section_banner {
+    width: 100vw; }
+
+  .footer_text {
+    width: 70vw; } }
