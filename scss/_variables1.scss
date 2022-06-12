@@ -2,7 +2,39 @@ $bg-img: url('../img/m-h-day.jpg');
 $text-color: #21232e;
 $bg-main: #fff;
 $bg-footer: #21232e;
-$gard-bg: linear-gradient(90deg, #fffb02 0%, rgba(47,93,207,1) 100%);
+$gard-bg: linear-gradient(90deg, #fffb02 0%, rgba(47, 93, 207, 1) 100%);
 $button-color: #b2af00;
 $after-color: #09c;
 $fontText: 'Hind', sans-serif;
+
+@mixin allButtons {
+	border-radius: 5px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	background: $button-color;
+	color: #fff;
+	padding: 12px 30px;
+	font-weight: map-get($font-weights, 'bold');
+	border: none;
+   box-sizing: content-box;
+	cursor: pointer;
+   transition: transform .2s;
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	&:hover {
+		background: #bbb800;
+      transform: scale(1.1);
+	}
+}
+
+$font-weights: (
+	'regular': 400,
+	'medium': 600,
+	'bold': 800,
+);
+
+@mixin allLinks {
+	color: #c6d0cb;
+	font-weight: map-get($font-weights, 'medium');
+}

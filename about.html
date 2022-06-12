@@ -12,6 +12,10 @@
 		<!-- Styles should be switched here: -->
 
 		<link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+		/>
 		<!--     <link rel="stylesheet" type="text/css" href="css/style2.css">-->
 
 		<title>СВЯТОСЛАВ мiжнародний фонд</title>
@@ -34,42 +38,71 @@
 					<a href="./index.html">
 						<button class="header_button">Home</button>
 					</a>
-					<button class="header_button">Donate</button>
-					<!-- <a href="#" class="login">Already has an account</a> -->
+					<form method="get" action="https://pay.fondy.eu/s/vtsEv">
+						<button class="header_button">Donate</button>
+					</form>
 				</div>
 			</div>
 		</header>
 		<main class="section">
 			<div class="section_card_wrap">
-				<div class="section_card">
+				<div class="section_card about_card">
 					<div class="gallery">
-						<img class="section_card_img" src="img/about-2.jpg" alt="experts" />
-						<img class="section_card_img" src="img/about-3.jpg" alt="experts" />
+						<a
+							href="img/about-1.jpg"
+							data-fancybox="gallery2"
+							class="pop-up_link"
+						>
+							<img
+								class="section_card_img"
+								src="img/about-1.jpg"
+								alt="experts"
+							/>
+						</a>
+						<a
+							href="img/about-2.jpg"
+							data-fancybox="gallery2"
+							class="pop-up_link"
+						>
+							<img
+								class="section_card_img"
+								src="img/about-2.jpg"
+								alt="experts"
+							/>
+						</a>
+						<a
+							href="img/about-3.jpg"
+							data-fancybox="gallery2"
+							class="pop-up_link"
+						>
+							<img
+								class="section_card_img"
+								src="img/about-3.jpg"
+								alt="experts"
+							/>
+						</a>
 					</div>
-					<div class="section_card_right_container">
+					<div class="section_card_right_container about_card-text_container">
 						<p class="section_card_heading">Про нас</p>
-						<p>Любі друзі!</p> 
-                        <p>
-                            На сьогоднішній день благодійність – це, мабуть, єдина
-						територія, де люди не намагаються реалізовувати свої амбіції та
-						досягати будь-яких цілей, крім однієї – безкорислива допомога людям
-						, які її потребують.
-                    </p>
-                        <p>
-                            Діяльність нашого Фонду спрямована на :
-						Допомогу переселенцям , з тимчасово окупованих територій , які були
-						вимушені залишати свої домівки і тікати від війни Дітям дитячих
-						будинків , які в цей тяжкий для країни час , також потребують
-						допомоги Лікарням , до яких прибувають поранені люди Літнім людям ,
-						які залишилися на одинці в тяжкій ситуації і потребують допомоги
-						Сім'ям які на даний момент знаходяться в підвалах і бомбосховищах на
-						територіях , на яких ведуться бойові дії Будь-який, навіть
-						найскромніший ваш внесок дуже важливий.
-                    </p>
-                    <p>
-                        Адже кожне врятоване життя —
-						безцінне!»
-                    </p> 
+						<p>Любі друзі!</p>
+						<p>
+							На сьогоднішній день благодійність – це, мабуть, єдина територія,
+							де люди не намагаються реалізовувати свої амбіції та досягати
+							будь-яких цілей, крім однієї – безкорислива допомога людям , які
+							її потребують.
+						</p>
+						<p>
+							Діяльність нашого Фонду спрямована на : Допомогу переселенцям , з
+							тимчасово окупованих територій , які були вимушені залишати свої
+							домівки і тікати від війни Дітям дитячих будинків , які в цей
+							тяжкий для країни час , також потребують допомоги Лікарням , до
+							яких прибувають поранені люди Літнім людям , які залишилися на
+							одинці в тяжкій ситуації і потребують допомоги Сім'ям які на даний
+							момент знаходяться в підвалах і бомбосховищах на територіях , на
+							яких ведуться бойові дії Будь-який, навіть найскромніший ваш
+							внесок дуже важливий.
+						</p>
+						<p>Адже кожне врятоване життя — безцінне!»</p>
 					</div>
 				</div>
 			</div>
@@ -80,7 +113,7 @@
 						Навіть найскромніший ваш внесок дуже важливий.
 					</p>
 				</div>
-				<form method="get" action="https://www.liqpay.ua/api/3/checkout">
+				<form method="get" action="https://pay.fondy.eu/s/vtsEv">
 					<button class="section_banner_button">Donate</button>
 				</form>
 			</div>
@@ -92,16 +125,15 @@
 					<p><span>Мiжнародний благодiйний фонд</span>СВЯТОСЛАВ</p>
 				</div>
 				<div class="footer_text">
-                    <p>Contacts: </p>
-                    <p>
-                        SvyatoslavCharityFund@gmail.com
-                    </p>
-                    <p>
-                        +380987070078
-                    </p>
+					<p>Contacts:</p>
+					<p>SvyatoslavCharityFund@gmail.com</p>
+					<p>+380987070078</p>
 				</div>
 				<span class="footer-cr"> &copy; 2022 by SVYATOSLAV </span>
 			</div>
 		</footer>
+		<script type="module">
+			import { Fancybox } from 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js';
+		</script>
 	</body>
 </html>

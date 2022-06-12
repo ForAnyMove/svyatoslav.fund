@@ -19,6 +19,10 @@
 		<!-- Styles should be switched here: -->
 
 		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+		/>
 		<!--     <link rel="stylesheet" type="text/css" href="css/style2.css">-->
 
 		<title>СВЯТОСЛАВ мiжнародний фонд</title>
@@ -30,7 +34,7 @@
 				<div class="landing-logo">
 					<img src="img/svyatoslav.svg" alt="logo" />
 					<!-- <p>СВЯТОСЛАВ<span>мiжнародний фонд</span></p> -->
-				</div>  
+				</div>
 				<p class="header_heading">
 					Твій маленький крок , може зробити велику справу
 				</p>
@@ -42,7 +46,7 @@
 					<a href="./about.html">
 						<button class="header_button">About us</button>
 					</a>
-					<form method="get" action="https://www.liqpay.ua/api/3/checkout">
+					<form method="get" action="https://pay.fondy.eu/s/vtsEv">
 						<button class="header_button">Donate</button>
 					</form>
 				</div>
@@ -52,65 +56,77 @@
 			<p class="section_text">Чим ми займаэмось?</p>
 			<div class="section_card_wrap">
 				<div class="section_card">
-					<img class="section_card_img" src="img/m-1.jpg" alt="experts" />
+					<a href="img/m-1.jpg" data-fancybox="gallery" class="pop-up_link">
+						<img class="section_card_img" src="img/m-1.jpg" alt="experts" />
+					</a>
 					<div class="section_card_right_container">
 						<p class="section_card_heading">Ми допомагаємо:</p>
 						<p class="section_card_text">
 							Людям переселенцям , з тимчасово окупованих територій , які були
 							вимушені залишати свої домівки і тікати від війни.
 						</p>
-						<a href="./about.html" class="section_link">Learn more...</a>
+						<a href="./about.html" class="section_link"></a>
 					</div>
 				</div>
 				<div class="section_card">
-					<img class="section_card_img" src="img/m-1.jpg" alt="experts" />
+					<a href="img/m-2.jpg" data-fancybox="gallery" class="pop-up_link">
+						<img class="section_card_img" src="img/m-2.jpg" alt="experts" />
+					</a>
 					<div class="section_card_right_container">
 						<p class="section_card_heading">Ми допомагаємо:</p>
 						<p class="section_card_text">
 							Дітям дитячих будинків , які в цей тяжкий для країни час ,
 							потребують допомоги.
 						</p>
-						<a href="./about.html" class="section_link">Learn more...</a>
+						<a href="./about.html" class="section_link"></a>
 					</div>
 				</div>
 				<div class="section_card">
-					<img class="section_card_img" src="img/m-1.jpg" alt="experts" />
+					<a href="img/m-3.jpg" data-fancybox="gallery" class="pop-up_link">
+						<img class="section_card_img" src="img/m-3.jpg" alt="experts" />
+					</a>
 					<div class="section_card_right_container">
 						<p class="section_card_heading">Ми допомагаємо:</p>
 						<p class="section_card_text">
 							Лікарням , до яких прибувають поранені люди.
 						</p>
-						<a href="./about.html" class="section_link">Learn more...</a>
+						<a href="./about.html" class="section_link"></a>
 					</div>
 				</div>
 				<div class="section_card">
-					<img class="section_card_img" src="img/m-1.jpg" alt="experts" />
+					<a href="img/m-4.jpg" data-fancybox="gallery" class="pop-up_link">
+						<img class="section_card_img" src="img/m-4.jpg" alt="experts" />
+					</a>
 					<div class="section_card_right_container">
 						<p class="section_card_heading">Ми допомагаємо:</p>
 						<p class="section_card_text">
 							Літнім людям , які залишилися на одинці в тяжкій ситуації і
 							потребують допомоги.
 						</p>
-						<a href="./about.html" class="section_link">Learn more...</a>
+						<a href="./about.html" class="section_link"></a>
 					</div>
 				</div>
 				<div class="section_card">
-					<img class="section_card_img" src="img/m-1.jpg" alt="experts" />
+					<a href="img/m-5.jpg" data-fancybox="gallery" class="pop-up_link">
+						<img class="section_card_img" src="img/m-5.jpg" alt="experts" />
+					</a>
 					<div class="section_card_right_container">
 						<p class="section_card_heading">Ми допомагаємо:</p>
 						<p class="section_card_text">
 							Сім'ям які на даний момент знаходяться в підвалах і бомбосховищах
 							на території , на якій ведуться бойові дії.
 						</p>
-						<a href="./about.html" class="section_link">Learn more...</a>
+						<a href="./about.html" class="section_link"></a>
 					</div>
 				</div>
 				<div class="section_card">
-					<img
-						class="section_card_img"
-						src="img/m-2.jpg"
-						alt="content formats"
-					/>
+					<a href="img/m-6.jpg" data-fancybox="gallery" class="pop-up_link">
+						<img
+							class="section_card_img"
+							src="img/m-6.jpg"
+							alt="content formats"
+						/>
+					</a>
 					<div class="section_card_right_container">
 						<p class="section_card_heading">Усе залежить вiд тебе</p>
 						<p class="section_card_text">
@@ -120,11 +136,13 @@
 							вчасно прийти на допомогу та виконати всі гарантійні зобов'язання
 							перед нашими підопічними.
 						</p>
-						<a href="./about.html" class="section_link">Learn more...</a>
+						<a href="./about.html" class="section_link"></a>
 					</div>
 				</div>
 				<div class="section_card">
-					<img class="section_card_img" src="img/m-3.jpg" alt="certificate" />
+					<a href="img/m-7.jpg" data-fancybox="gallery" class="pop-up_link">
+						<img class="section_card_img" src="img/m-7.jpg" alt="certificate" />
+					</a>
 					<div class="section_card_right_container">
 						<p class="section_card_heading">А також</p>
 						<p class="section_card_text">
@@ -132,18 +150,20 @@
 							відправляємо морскій пехоті та артилеристам одеської області,
 							спецназу НГУ Ізюмського напрямку.
 						</p>
-						<a href="./about.html" class="section_link">Learn more...</a>
+						<a href="./about.html" class="section_link"></a>
 					</div>
 				</div>
 				<div class="section_card">
-					<img class="section_card_img" src="img/m-3.jpg" alt="certificate" />
+					<a href="img/m-8.jpg" data-fancybox="gallery" class="pop-up_link">
+						<img class="section_card_img" src="img/m-8.jpg" alt="certificate" />
+					</a>
 					<div class="section_card_right_container">
 						<p class="section_card_heading">А також</p>
 						<p class="section_card_text">
-                            Корм для тварин передаємо волонтерам Одеси Король Марині що развозе його по приютам для
-							тварин.
+							Корм для тварин передаємо волонтерам Одеси Король Марині що
+							развозе його по приютам для тварин.
 						</p>
-						<a href="./about.html" class="section_link">Learn more...</a>
+						<a href="./about.html" class="section_link"></a>
 					</div>
 				</div>
 			</div>
@@ -154,7 +174,7 @@
 						Навіть найскромніший ваш внесок дуже важливий.
 					</p>
 				</div>
-				<form method="get" action="https://www.liqpay.ua/api/3/checkout">
+				<form method="get" action="https://pay.fondy.eu/s/vtsEv">
 					<button class="section_banner_button">Donate</button>
 				</form>
 			</div>
@@ -166,18 +186,32 @@
 					<p><span>Мiжнародний благодiйний фонд</span>СВЯТОСЛАВ</p>
 				</div>
 				<div class="footer_text">
-                    <p>
-                        Contacts: 
-                    </p>
-                    <p>
-                        SvyatoslavCharityFund@gmail.com
-                    </p>
-                    <p>
-                        +380987070078
-                    </p>
+					<p>Contacts:</p>
+					<p>SvyatoslavCharityFund@gmail.com</p>
+					<p>+380987070078</p>
 				</div>
 				<span class="footer-cr"> &copy; 2022 by SVYATOSLAV </span>
 			</div>
 		</footer>
+		<script type="module">
+			import { Fancybox } from 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js';
+		</script>
+		<script type="module">
+			import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js';
+			import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js';
+
+			const firebaseConfig = {
+				apiKey: 'AIzaSyCbvq0jXGZtLSLQQ62-4B-FJxcPTui7M48',
+				authDomain: 'svyatoslav-charity-fund.firebaseapp.com',
+				projectId: 'svyatoslav-charity-fund',
+				storageBucket: 'svyatoslav-charity-fund.appspot.com',
+				messagingSenderId: '713091888184',
+				appId: '1:713091888184:web:3db99078a9adf5abb8e2cd',
+				measurementId: 'G-0V0YL6NK9S',
+			};
+
+			const app = initializeApp(firebaseConfig);
+			const analytics = getAnalytics(app);
+		</script>
 	</body>
 </html>
